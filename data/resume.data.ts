@@ -74,7 +74,7 @@ export const RESUME = {
   skills: {
     frontend: ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Responsive UI Design'],
     backend: ['Node.js', 'Express.js', 'SQL Server', 'MySQL', 'Stored Procedures'],
-    tools: ['Git', 'Syncfusion', 'JSPDF', 'Syncfusion Reports', 'Power BI', 'MS Office']
+    tools: ['Git', 'Syncfusion', 'JSPDF ', 'Syncfusion Reports', 'Power BI', 'MS Office']
   },
   Resume_Pdf: 'Ismail_N_Resume_FS.pdf'
 };
