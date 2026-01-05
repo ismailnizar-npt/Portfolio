@@ -1,0 +1,24 @@
+<section class="hero fade-in">
+    <!-- <p class="greeting">Hi</p> -->
+    <h1 class="name">{{ resume.personal.name }}.</h1>
+    <h2 class="role">I build things for the web.</h2>
+    <p class="description">
+        I am a {{ resume.personal.role }} based in {{ resume.personal.location }}.
+        Specializing in building exceptional digital experiences using Angular & SQL Server.
+    </p>
+    <div class="cta-group">
+        <div class="social-links" *ngIf="resume.personal.social">
+            <a [href]="resume.personal.social.linkedin" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-linkedin">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+        </div>
+        <!-- <a href="#projects" class="btn primary">Check out my work</a>
+        <a [href]="'/assets/' + resume.Resume_Pdf" target="_blank" class="btn secondary">Download Resume</a> -->
+    </div>
+</section>

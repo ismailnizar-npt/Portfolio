@@ -1,0 +1,74 @@
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    padding-top: 100px;
+}
+
+.greeting {
+    color: var(--secondary);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.name {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    color: var(--text-main);
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: clamp(30px, 7vw, 70px);
+    font-weight: 600;
+    color: var(--text-muted);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 540px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--secondary);
+    transition: all 0.2s;
+
+    &.primary {
+        background: transparent;
+        color: var(--secondary);
+
+        &:hover {
+            background: rgba(100, 255, 218, 0.1);
+        }
+    }
+
+    &.secondary {
+        background: var(--secondary);
+        color: var(--bg-color);
+        border: 1px solid var(--secondary);
+
+        &:hover {
+            background: transparent;
+            color: var(--secondary);
+        }
+    }
+}

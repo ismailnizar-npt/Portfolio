@@ -1,0 +1,15 @@
+<section id="experience" class="experience">
+    <h2 class="section-title"><span>03.</span> Where I've Worked</h2>
+
+    <div class="timeline">
+        <div class="job-card" *ngFor="let job of resume.experience">
+            <div class="job-header">
+                <h3>{{ job.role }} <span class="company">@ {{ job.company }}</span></h3>
+                <p class="period">{{ job.period }} | {{ job.location }}</p>
+            </div>
+            <ul class="job-points">
+                <li *ngFor="let point of job.points">{{ point }}</li>
+            </ul>
+        </div>
+    </div>
+</section>
