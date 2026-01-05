@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RESUME } from '../../data/resume.data';
+import { RESUME, IMAGE } from '../../data/resume.data';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -11,4 +11,5 @@ import { CommonModule } from '@angular/common';
 })
 export class HeroComponent {
     resume = RESUME;
+    image = IMAGE;
 }
